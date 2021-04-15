@@ -1,0 +1,52 @@
+<!doctype html> 
+<html lang="pt-br"> 
+  <head> 
+
+    <title>Calculador de média</title> 
+    <meta charset="UTF-8"> 
+   </head> 
+
+  <body> 
+
+    <body bgcolor="#DCDCDC">
+   
+    <center><h1 style= "color:#191970;"> Insira Para Calcular sua Média Bimestral: </h1>
+    
+    <input type="text" name="nota1" id="primeiranota" placeholder="Digite sua primeira nota"/>
+    <br/>
+    <input type="text" name="nota2" id="segundanota" placeholder="Digite sua segunda nota"/>
+    <br/>
+    <input type="text" name="nota3" id="terceiranota" placeholder="Digite sua terceira nota"/>
+    <br/>
+    <p><input type="button" value="Calcular Média" id="Calculador" style= "color:#191970;" />
+    <hr/></p>
+    
+    <center/>
+
+    <script type="text/javascript">  
+          
+          document.getElementById("Calculador").addEventListener('click', function(){
+
+            const n1 = parseFloat(document.getElementById("primeiranota").value);
+            const n2 = parseFloat(document.getElementById("segundanota").value);
+            const n3 = parseFloat(document.getElementById("terceiranota").value);
+            var media = ( (n1 + n2 + n3) / 3 ); 
+
+            if (media <= 6) {
+                alert("Sua média foi: " + media + " Infelizmente você não foi aprovado, se esforce mais na próxima!.");
+                } 
+                else if (8 >= media >= 6) {
+                  alert("Sua média foi: " + media + " parabéns! você foi aprovado.");
+                  }	
+                    else if ( media >= 8) {
+                     alert("Sua média foi: " + media + " parabéns! você foi aprovado, e obteve uma ótima nota.");
+                     }	
+	  });
+
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+   
+   </script> 
+  
+  </body>
+
+</html>
